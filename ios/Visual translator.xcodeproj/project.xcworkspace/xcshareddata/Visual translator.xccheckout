@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>67A7E178-FB83-44EA-B6E9-AB472BEC7A80</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Visual translator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DED4A07062FC778EE89867B7D54B4D0138065431</key>
+		<string>https://github.com/sedrakpc/Visual-translator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Visual translator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DED4A07062FC778EE89867B7D54B4D0138065431</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sedrakpc/Visual-translator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DED4A07062FC778EE89867B7D54B4D0138065431</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DED4A07062FC778EE89867B7D54B4D0138065431</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Visual%20translator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
