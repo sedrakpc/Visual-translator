@@ -14,11 +14,11 @@
 		<string>https://github.com/sedrakpc/Visual-translator.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Visual translator.xcodeproj</string>
+	<string>ios/Visual translator.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DED4A07062FC778EE89867B7D54B4D0138065431</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/sedrakpc/Visual-translator.git</string>

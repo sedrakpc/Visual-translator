@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+    @property (nonatomic, strong) NSMutableArray *fromLanguageData;
+    @property (weak, nonatomic) IBOutlet UIPickerView *fromLanguage;
 @end
 
