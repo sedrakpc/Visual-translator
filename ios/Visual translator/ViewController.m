@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "FDTakeController.h"
 
-@interface ViewController ()
+@interface ViewController () <FDTakeDelegate>
 
 @end
 
@@ -20,6 +21,10 @@
     [self.fromLanguageData addObject:@{@"value": @"en", @"label" : NSLocalizedString(@"language.english", nil)}];
     
     [self.fromLanguageData addObject:@{@"value": @"ru", @"label" : NSLocalizedString(@"language.russian", nil)}];
+
+    self.takeController = [[FDTakeController alloc] init];
+    self.takeController.allowsEditingPhoto = YES;
+    self.takeController.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
 
 }
@@ -44,6 +49,25 @@
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     return self.fromLanguageData[row][@"label"];
+}
+
+- (IBAction)selectImage:(id)sender {
+    [self.takeController takePhotoOrChooseFromLibrary];
+}
+
+- (void)takeController:(FDTakeController *)controller didCancelAfterAttempting:(BOOL)madeAttempt
+{
+    UIAlertView *alertView;
+    if (madeAttempt)
+        alertView = [[UIAlertView alloc] initWithTitle:@"VT" message:@"The take was cancelled after selecting media" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    else
+        alertView = [[UIAlertView alloc] initWithTitle:@"VT" message:@"The take was cancelled without selecting media" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
+}
+
+- (void)takeController:(FDTakeController *)controller gotPhoto:(UIImage *)photo withInfo:(NSDictionary *)info
+{
+    [self.imageView setImage:photo];
 }
 
 @end
